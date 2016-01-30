@@ -1,4 +1,6 @@
-# My-vim
+# ssarcandy-vim
+
+My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX
 
 ## Install
 I use [Pathogen](https://github.com/tpope/vim-pathogen) for auto-load all plugins.  
