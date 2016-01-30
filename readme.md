@@ -1,21 +1,51 @@
-# My-vim-tips
+# My-vim
 
-## Plugins
-| plugin name       |  main feature   |  note   |
-|-------------------|-----------------|---------|
-|delimitMate        |provides insert mode auto-completion for quotes, parens, brackets, etc.                 |         |
-|indentLine         |show indent guide line| didn't use in current setting|
-|jshint2.vim        |Find and show error in `.js` file| I use syntastic mainly|
-|nerdcommenter      |Useful comment plugin||
-|nerdtree           |Show dir tree structure ||
-|syntastic          |provide syntax checking||
-|tabular            | line up `=`, `:`|mostly use in `.js`|
-|taglist.vim        | provides an overview of the structure of source code files (list of function tags)||
-|ultisnip           |ultimate solution for snippets||
-|vim-autoformat     | Formating code||
-|vim-nodejs-complete| Auto-complete for `nodejs`| need `nodejs`|
-|airline            |create better-looking, more functional vim statuslines and tabline ||
-|YouCompleteMe      | Auto-complete for `c/c++`||
+## Install
+I use [Pathogen](https://github.com/tpope/vim-pathogen) for auto-load all plugins.  
+Installation is simple, just do following command in terminal:
+
+```bash
+# clone into you home dir/
+~$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
+# rename as .vim/
+~$ mv myVim .vim  
+# copy .vimrc to your home dir/
+~$ cp .vim/.vimrc ~    
+# goto .vim/ and run the installation script
+~$ cd .vim   
+~$ ./install.sh
+```
+
+## Common problems
+
+ - Q: airline glyphs cannot show normally.
+ - A: see instruction of [airline fonts](https://github.com/vim-airline/vim-airline#integrating-with-powerline-fonts)
+ - Q: neocomplete says need Lua supports
+ - A: see [neocomplete README](https://github.com/Shougo/neocomplete.vim#requirements)
+
+
+## Plugin list
+
+ - [bbye](https://github.com/moll/vim-bbye.git )
+ - [ctrlp.vim](https://github.com/kien/ctrlp.vim.git )
+ - [delimitMate](https://github.com/Raimondi/delimitMate.git )
+ - [es.next.syntax.vim](https://github.com/othree/es.next.syntax.vim.git )
+ - [indentLine](https://github.com/Yggdroot/indentLine.git )
+ - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim.git )
+ - [nerdcommenter](https://github.com/scrooloose/nerdcommenter.git )
+ - [nerdtree](https://github.com/scrooloose/nerdtree.git )
+ - [syntastic](https://github.com/scrooloose/syntastic.git )
+ - [tabular](https://github.com/godlygeek/tabular.git )
+ - [taglist.vim](https://github.com/vim-scripts/taglist.vim.git )
+ - [vim-airline](https://github.com/vim-airline/vim-airline.git )
+ - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes.git )
+ - [vim-autoformat](https://github.com/Chiel92/vim-autoformat.git )
+ - [vim-gitgutter](https://github.com/airblade/vim-gitgutter.git )
+ - [vim-jsx](https://github.com/mxw/vim-jsx.git )
+ - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors.git )
+ - [vim-nodejs-complete](https://github.com/myhere/vim-nodejs-complete.git )
+ - [vim-snippets](https://github.com/honza/vim-snippets.git )
+ - [yajs.vim](https://github.com/othree/yajs.vim.git )
 
 ## Shortcuts
 
@@ -35,3 +65,4 @@
 |`q`           |ERROR LIST      |close jshint error list   | for js file only                 |
 |`F9`          |NORMAL/INSERT   |show jshint next error    | for js file only                 |
 |`F7`          |NORMAL/INSERT   |show jshint previous error| for js file only                 |
+
