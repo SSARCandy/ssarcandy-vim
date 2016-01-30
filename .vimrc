@@ -19,6 +19,8 @@ set wildchar=<TAB>      " such as <TAB> in shell
 set smarttab
 set tabstop=4
 set shiftwidth=4
+set expandtab
+
 set list lcs=tab:\|\    "indent hint with hard-tab"
 set mouse=a
 set nu
@@ -45,6 +47,7 @@ set guioptions-=r
 set guioptions-=R
 
 syntax on               " show parts of the text in another font or color
+au BufNewFile, BufRead *.ejs set filetype=html
 filetype plugin on
 
 autocmd FileType c,cpp,cc,java call PROG()
@@ -168,12 +171,19 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_error_symbol = ">"
 let g:syntastic_check_on_wq = 0
 let Tlist_Ctags_Cmd="/usr/local/Cellar/ctags/5.8_1/bin/ctags"
 let Tlist_Auto_Update = 1
 let Tlist_Use_Right_Window=1
+let g:syntastic_javascript_checkers = ['eslint'] " StrTrim(system('npm-which eslint'))
 
+" use local eslint in node_modules
+"function! StrTrim(txt)
+  "return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+"endfunction
+"let g:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
 
 " -------------- jshint ----------------
 "let jshint2_max_height = 5
