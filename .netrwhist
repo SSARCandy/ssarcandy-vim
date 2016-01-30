@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/ssarcandy/Downloads/wxWidgets-3.0.2'
+let g:netrw_dirhist_2='/Users/ssarcandy/Downloads/wxWidgets-3.0.2/src'
+let g:netrw_dirhist_3='/Users/ssarcandy/Downloads/wxWidgets-3.0.2/src/osx'
+let g:netrw_dirhist_4='/Users/ssarcandy/Downloads/opencv-2.4.10'
+let g:netrw_dirhist_5='/Users/ssarcandy/Downloads/opencv-2.4.10/modules'
+let g:netrw_dirhist_6='/Users/ssarcandy/Downloads/opencv-2.4.10/modules/legacy'
+let g:netrw_dirhist_7='/Users/ssarcandy/Downloads/opencv-2.4.10/modules/legacy/src'
+let g:netrw_dirhist_8='/Users/ssarcandy/Documents/GitHub/ExchangeWorld'
