@@ -50,6 +50,7 @@ Installation is simple, just do following command in terminal:
  - [vim-jsx](https://github.com/mxw/vim-jsx)
  - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
  - [vim-nodejs-complete](https://github.com/myhere/vim-nodejs-complete)
+ - [vim-sleuth](https://github.com/tpope/vim-sleuth)
  - [vim-snippets](https://github.com/honza/vim-snippets)
  - [yajs.vim](https://github.com/othree/yajs.vim)
 

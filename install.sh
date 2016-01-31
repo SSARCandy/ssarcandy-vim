@@ -26,5 +26,6 @@ git clone https://github.com/airblade/vim-gitgutter.git
 git clone https://github.com/mxw/vim-jsx.git 
 git clone https://github.com/terryma/vim-multiple-cursors.git 
 git clone https://github.com/myhere/vim-nodejs-complete.git 
+git clone https://github.com/tpope/vim-sleuth.git
 git clone https://github.com/honza/vim-snippets.git 
 git clone https://github.com/othree/yajs.vim.git 
