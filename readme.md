@@ -18,6 +18,10 @@ Installation is simple, just do following command in terminal:
 ~$ ./install.sh
 ```
 
+## Screenshots
+
+![](./screenshot/screenshot-1.jpg)
+
 ## Common problems
 
  - Q: airline glyphs cannot show normally.
@@ -58,7 +62,7 @@ Installation is simple, just do following command in terminal:
 |`` ` ``       |NORMAL          |goto previous tab file    |                                  |
 |`\d`          |NORMAL          |close current tab         | will warning without saving      |
 |`ctrl + l`    |NORMAL/INSERT   |Toggle comments           |                                  |
-|`ctrl + n`    |NORMAL          |open NERDtree             |                                  |
+|`ctrl + m`    |NORMAL          |open NERDtree             |                                  |
 |`ctrl + ww`   |NORMAL          |switching windows         |                                  |
 | `\m`         |NORMAL          |compile                   | must have Makefile at current dir|
 | `:!./a.out`  |NORMAL          |execute                   | a.out is exe name                |
