@@ -68,6 +68,7 @@ Installation is simple, just do following command in terminal:
 | `\m`         |NORMAL          |compile                   | must have Makefile at current dir|
 | `:!./a.out`  |NORMAL          |execute                   | a.out is exe name                |
 |`ctrl + t`    |NORMAL          |open Taglist              | for c/cpp only                   |
+|`ctrl + p`    |NORMAL          |search file in working dir|                                  |
 |`=`           |NORMAL          |align `=` and `:`         | for js file only                 |
 |`q`           |ERROR LIST      |close jshint error list   | for js file only                 |
 |`F9`          |NORMAL/INSERT   |show jshint next error    | for js file only                 |
