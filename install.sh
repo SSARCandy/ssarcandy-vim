@@ -1,8 +1,13 @@
 #!/bin/bash
 
+# copy vimrc to home dir/
+cp .vimrc ~
+
+# create and navigate to bundle/ 
 mkdir bundle
 cd bundle
 
+# clone plugins
 git clone https://github.com/moll/vim-bbye.git 
 git clone https://github.com/kien/ctrlp.vim.git 
 git clone https://github.com/Raimondi/delimitMate.git 
