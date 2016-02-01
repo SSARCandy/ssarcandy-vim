@@ -39,7 +39,7 @@ set hlsearch            " When there is a previous search pattern, highlight all
 set fileencodings=utf-8,cp936,big5,latin1
 set background=dark     " Theme background
 colorscheme molokai     " Theme
-set concealcursor
+set concealcursor=
 
 " 禁止显示滚动条
 set guioptions-=l
