@@ -18,6 +18,12 @@ Installation is simple, just do following command in terminal:
 ~$ ./install.sh
 ```
 
+## Update plugins
+
+```
+~$ ./update.sh
+```
+
 ## Screenshots
 
 ![](./screenshot/screenshot-1.jpg)

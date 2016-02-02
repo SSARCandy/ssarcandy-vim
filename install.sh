@@ -9,7 +9,7 @@ cd bundle
 
 # clone plugins
 git clone https://github.com/moll/vim-bbye.git 
-git clone https://github.com/kien/ctrlp.vim.git 
+git clone https://github.com/ctrlpvim/ctrlp.vim.git
 git clone https://github.com/Raimondi/delimitMate.git 
 git clone https://github.com/othree/es.next.syntax.vim.git 
 git clone https://github.com/Yggdroot/indentLine.git 
