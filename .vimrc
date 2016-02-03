@@ -41,6 +41,20 @@ set background=dark     " Theme background
 colorscheme molokai     " Theme
 set concealcursor=
 
+" Put plugins and dictionaries in this dir (also on Windows)
+let vimDir = '$HOME/.vim'
+let &runtimepath.=','.vimDir
+
+" Keep undo history across sessions by storing it in a file
+if has('persistent_undo')
+  let myUndoDir = expand(vimDir . '/undodir')
+  " Create dirs
+  call system('mkdir ' . vimDir)
+  call system('mkdir ' . myUndoDir)
+  let &undodir = myUndoDir
+  set undofile
+endif
+
 " 禁止显示滚动条
 set guioptions-=l
 set guioptions-=L
@@ -56,30 +70,30 @@ autocmd FileType javascript call PROGjs()
 autocmd FileType make setlocal noexpandtab
 
 function PROGjs()
-    nmap = :Tab /=<CR>:Tab /:<CR>
-	
-	"JSHint show next error
-	imap <silent><F9> <C-O>:lnext<CR>
-	nmap <silent><F9> :lnext<CR>
+  nmap = :Tab /=<CR>:Tab /:<CR>
 
-	"JSHint show previous error
-	imap <silent><F7> <C-O>:lprevious<CR>
-	nmap <silent><F7> :lprevious<CR>
+  "JSHint show next error
+  imap <silent><F9> <C-O>:lnext<CR>
+  nmap <silent><F9> :lnext<CR>
+
+  "JSHint show previous error
+  imap <silent><F7> <C-O>:lprevious<CR>
+  nmap <silent><F7> :lprevious<CR>
 endfunction
 
 function PROG()
-    set showmatch
-    set nosmartindent
-    set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,n0,f0,{0,}0,^-1s,:0,=s,g0,h1s,p2,t0,+2,(2,)20,*30
-    set cinoptions=t0
-    set formatoptions=tcqr
-    let Tlist_Auto_Open=1
+  set showmatch
+  set nosmartindent
+  set cindent comments=sr:/*,mb:*,el:*/,:// cino=>s,e0,n0,f0,{0,}0,^-1s,:0,=s,g0,h1s,p2,t0,+2,(2,)20,*30
+  set cinoptions=t0
+  set formatoptions=tcqr
+  let Tlist_Auto_Open=1
 
-    " Autoformat triggered when ; } is typed.
-    imap } }<ESC>:Autoformat<CR>/}<CR>:let @/ = ""<CR>i<RIGHT>
-    "imap ; ;<ESC>:Autoformat<CR>/;<CR>:let @/ = ""<CR>i<RIGHT>
+  " Autoformat triggered when ; } is typed.
+  imap } }<ESC>:Autoformat<CR>/}<CR>:let @/ = ""<CR>i<RIGHT>
+  "imap ; ;<ESC>:Autoformat<CR>/;<CR>:let @/ = ""<CR>i<RIGHT>
 
-    nmap <C-t> :Tlist<CR>
+  nmap <C-t> :Tlist<CR>
 endfunction
 
 highlight Comment    ctermfg=DarkCyan
@@ -181,7 +195,7 @@ let g:syntastic_javascript_checkers = ['eslint'] " StrTrim(system('npm-which esl
 
 " use local eslint in node_modules
 "function! StrTrim(txt)
-  "return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+"return substitute(a:txt, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
 "endfunction
 "let g:syntastic_javascript_eslint_exec = StrTrim(system('npm-which eslint'))
 
@@ -226,14 +240,14 @@ let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'
 
 " Define dictionary.
 let g:neocomplete#sources#dictionary#dictionaries = {
-    \ 'default' : '',
-    \ 'vimshell' : $HOME.'/.vimshell_hist',
-    \ 'scheme' : $HOME.'/.gosh_completions'
-        \ }
+      \ 'default' : '',
+      \ 'vimshell' : $HOME.'/.vimshell_hist',
+      \ 'scheme' : $HOME.'/.gosh_completions'
+      \ }
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
-    let g:neocomplete#keyword_patterns = {}
+  let g:neocomplete#keyword_patterns = {}
 endif
 let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
