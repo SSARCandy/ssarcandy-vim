@@ -13,15 +13,14 @@ Installation is simple, just do following command in terminal:
 # rename as .vim/
 ~$ mv ssarcandy-vim .vim  
 
-# goto .vim/ and run the installation script
-~$ cd .vim   
-~$ ./install.sh
+# installation plugins
+~$ git submodule foreach --recursive git pull origin master   
 ```
 
 ## Update plugins
 
 ```
-~$ ./update.sh
+~$ git submodule update --recursive
 ```
 
 ## Screenshots
