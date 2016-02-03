@@ -23,7 +23,7 @@ Installation is simple, just do following command in terminal:
 
 ## Update plugins
 
-```
+```bash
 ~$ git submodule update --recursive
 
 # or you can use the updating script
