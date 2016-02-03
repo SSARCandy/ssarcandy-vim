@@ -18,7 +18,7 @@ Installation is simple, just do following command in terminal:
 ~$ git submodule foreach --recursive git pull origin master   
 
 # or you can use the installation script
-~# ./install.sh
+~$ ./install.sh
 ```
 
 ## Update plugins
@@ -27,7 +27,7 @@ Installation is simple, just do following command in terminal:
 ~$ git submodule update --recursive
 
 # or you can use the updating script
-~# ./update.sh
+~$ ./update.sh
 ```
 
 ## Screenshots
