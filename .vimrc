@@ -252,3 +252,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(exe|so|dll)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+
+" --------------- incsearch ----------------
+map /  <Plug>(incsearch-forward)

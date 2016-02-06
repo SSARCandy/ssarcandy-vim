@@ -10,9 +10,8 @@ Installation is simple, just do following command in terminal:
 # clone into your home dir/
 ~$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
 
-# rename dir as .vim/ and copy .vimrc to home/
-~$ mv ssarcandy-vim .vim
-~$ cp .vim/.vimrc ~
+# rename as .vim/
+~$ mv ssarcandy-vim .vim  
 
 # install plugins
 ~$ cd .vim/
@@ -41,14 +40,18 @@ Installation is simple, just do following command in terminal:
  - A: see instruction of [airline fonts](https://github.com/vim-airline/vim-airline#integrating-with-powerline-fonts)
  - Q: neocomplete says need Lua supports
  - A: see [neocomplete README](https://github.com/Shougo/neocomplete.vim#requirements)
+ - Q: ack.vim didn't work.
+ - A: ack.vim required [ack](http://beyondgrep.com/install/) installed.
 
 
 ## Plugin list
 
+ - [ack.vim](https://github.com/mileszs/ack.vim)
  - [bbye](https://github.com/moll/vim-bbye)
  - [ctrlp.vim](https://github.com/kien/ctrlp.vim)
  - [delimitMate](https://github.com/Raimondi/delimitMate)
  - [es.next.syntax.vim](https://github.com/othree/es.next.syntax.vim)
+ - [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
  - [indentLine](https://github.com/Yggdroot/indentLine)
  - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
  - [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
