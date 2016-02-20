@@ -10,6 +10,7 @@ Installation is simple, just do following command in terminal:
 # clone into your home dir/
 ~$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
 
+# make sure that .vim/ isn't exist in your home dir
 # rename as .vim/ and copy .vimrc to home dir/
 ~$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
 
