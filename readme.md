@@ -43,7 +43,8 @@ Installation is simple, just do following command in terminal:
  - A: see [neocomplete README](https://github.com/Shougo/neocomplete.vim#requirements)
  - Q: ack.vim didn't work.
  - A: ack.vim required [ack](http://beyondgrep.com/install/) installed.
-
+ - Q: vim-go not working
+ - A: see vim-go [readme](https://github.com/fatih/vim-go#install)
 
 ## Plugin list
 
@@ -64,6 +65,7 @@ Installation is simple, just do following command in terminal:
  - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
  - [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
  - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+ - [vim-go](https://github.com/fatih/vim-go)
  - [vim-jsx](https://github.com/mxw/vim-jsx)
  - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
  - [vim-nodejs-complete](https://github.com/myhere/vim-nodejs-complete)
