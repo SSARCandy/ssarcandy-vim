@@ -39,6 +39,7 @@ set background=dark     " Theme background
 colorscheme molokai     " Theme
 set concealcursor=
 set encoding=utf-8
+set helplang=tw         " zh-tw for vim doc
 
 " hide scrollbar
 set guioptions-=l
@@ -110,7 +111,8 @@ imap <C-l> <C-O>\c
 " Toggle NERDTree
 nmap <C-m> :NERDTreeToggle<CR>
 
-
+" Open on github
+nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
 
 
 " -------------- Pathogen (Plugin Manager)
@@ -268,3 +270,4 @@ au FileType go nmap <Leader>ds <Plug>(go-def-split)
 au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
+let g:go_fmt_autosave = 0
