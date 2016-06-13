@@ -97,6 +97,9 @@ nnoremap zz za
 " remap ZZ to save & close tab(buffer)
 nmap ZZ :update<CR>:Bd<CR>
 
+" remap \x to close split window
+nmap <leader>x :q<CR>
+
 " Save file
 nmap <Leader>s :update<CR>
 
