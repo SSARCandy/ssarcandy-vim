@@ -33,7 +33,7 @@ Installation is simple, just do following command in terminal:
 
 ## Screenshots
 
-![](./screenshot/screenshot-1.jpg)
+![](https://raw.githubusercontent.com/SSARCandy/ssarcandy-vim/master/screenshot/screenshot-1.jpg)
 
 ## Common problems
 
