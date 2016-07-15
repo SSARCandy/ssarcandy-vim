@@ -73,3 +73,6 @@
 [submodule "bundle/vimcdoc-tw"]
 	path = bundle/vimcdoc-tw
 	url = https://github.com/vim-tw/vimcdoc-tw.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color

@@ -64,6 +64,7 @@ Installation is simple, just do following command in terminal:
  - [vim-airline](https://github.com/vim-airline/vim-airline)
  - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
  - [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+ - [vim-css-color](https://github.com/skammer/vim-css-color)
  - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
  - [vim-go](https://github.com/fatih/vim-go)
  - [vim-jsx](https://github.com/mxw/vim-jsx)
@@ -81,6 +82,7 @@ Installation is simple, just do following command in terminal:
 |`Tab`         |NORMAL          |goto next tab file        |                                  |
 |`` ` ``       |NORMAL          |goto previous tab file    |                                  |
 |`\d`          |NORMAL          |close current tab         | will warning without saving      |
+|`\x`          |NORMAL          |close current window      |                                  |
 |`ctrl + l`    |NORMAL/INSERT   |Toggle comments           |                                  |
 |`ctrl + m`    |NORMAL          |open NERDtree             |                                  |
 |`ctrl + ww`   |NORMAL          |switching windows         |                                  |

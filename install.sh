@@ -32,3 +32,4 @@ git clone https://github.com/othree/yajs.vim.git
 git clone https://github.com/mileszs/ack.vim.git
 git clone https://github.com/haya14busa/incsearch.vim.git
 git clone https://github.com/fatih/vim-go.git 
+git clone https://github.com/ap/vim-css-color
