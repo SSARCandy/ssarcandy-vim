@@ -76,3 +76,9 @@
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color
+[submodule "bundle/vim-go"]
+	path = bundle/vim-go
+	url = https://github.com/fatih/vim-go
+[submodule "bundle/nerdtree-execute"]
+	path = bundle/nerdtree-execute
+	url = https://github.com/ivalkeen/nerdtree-execute.git
