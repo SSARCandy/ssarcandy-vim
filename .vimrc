@@ -8,9 +8,6 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
 
 Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 Plugin 'mileszs/ack.vim'
@@ -32,12 +29,15 @@ Plugin 'Chiel92/vim-autoformat'
 Plugin 'skammer/vim-css-color'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
+Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'myhere/vim-nodejs-complete'
 Plugin 'tpope/vim-sleuth'
 Plugin 'honza/vim-snippets'
 Plugin 'othree/yajs.vim'
+Plugin 'chrisbra/csv.vim'
+Plugin 'ivalkeen/nerdtree-execute'
 "Plugin 'ryanoasis/vim-webdevicons'
 
 " All of your Plugins must be added before the following line
