@@ -2,6 +2,56 @@
 "   vim config file         "
 "   Created by SSARCandy    "
 """""""""""""""""""""""""""""
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
+Plugin 'mileszs/ack.vim'
+Plugin 'moll/vim-bbye'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'othree/es.next.syntax.vim'
+Plugin 'haya14busa/incsearch.vim'
+Plugin 'Yggdroot/indentLine'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+Plugin 'vim-scripts/taglist.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'Chiel92/vim-autoformat'
+Plugin 'skammer/vim-css-color'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'fatih/vim-go'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'myhere/vim-nodejs-complete'
+Plugin 'tpope/vim-sleuth'
+Plugin 'honza/vim-snippets'
+Plugin 'othree/yajs.vim'
+Plugin 'chrisbra/csv.vim'
+Plugin 'ivalkeen/nerdtree-execute'
+"Plugin 'ryanoasis/vim-webdevicons'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+" Brief help
+"  :PluginList       - lists configured plugins
+"  :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+"  :PluginSearch foo - searches for foo; append `!` to refresh local cache
+"  :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" Put your non-Plugin stuff after this line
 
 set shell=bash\ -i
 set autoindent
@@ -117,11 +167,6 @@ nmap <C-m> :NERDTreeToggle<CR>
 " Open on github
 nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
 
-
-" -------------- Pathogen (Plugin Manager)
-runtime bundle/pathogen/autoload/pathogen.vim
-" run pathogen
-execute pathogen#infect()
 
 
 
@@ -274,3 +319,13 @@ au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
 au FileType go nmap <Leader>dt <Plug>(go-def-tab)
 au FileType go nmap <Leader>gb <Plug>(go-doc-browser)
 let g:go_fmt_autosave = 0
+
+
+
+" -------------- dev-icon ---------------------
+"set guifont=Literation\ Mono\ Powerline\ Nerd\ Font\ Complete\ Mono:h15
+"set guifont=Literation\ Mono\ Powerline\ Nerd\ Font\ Complete\ Mono\ Windows\ Compatible:h15
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete:h15
+"autocmd FileType nerdtree setlocal nolist
+"let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
+"set ambiwidth=double
