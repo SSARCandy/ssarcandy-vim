@@ -3,7 +3,7 @@
 My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX
 
 ## Install
-I use [Pathogen](https://github.com/tpope/vim-pathogen) for auto-load all plugins.  
+I use [Vundle](https://github.com/VundleVim/Vundle.vim) for plugin managment.  
 Installation is simple, just do following command in terminal:
 
 ```bash
@@ -15,24 +15,12 @@ Installation is simple, just do following command in terminal:
 ~$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
 
 # install plugins
-~$ cd .vim/
-~$ git submodule foreach --recursive git pull origin master   
-
-# or you can use the installation script
-~$ ./install.sh
-```
-
-## Update plugins
-
-```bash
-~$ git submodule update --recursive
-
-# or you can use the updating script
-~$ ./update.sh
+~$ vim .vimrc
+# type following command in vim
+# :PluginInstall
 ```
 
 ## Screenshots
-
 ![](https://raw.githubusercontent.com/SSARCandy/ssarcandy-vim/master/screenshot/screenshot-1.jpg)
 
 ## Common problems
