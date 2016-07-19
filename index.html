@@ -27,7 +27,7 @@
 <h2>
 <a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h2>
 
-<p>I use <a href="https://github.com/tpope/vim-pathogen">Pathogen</a> for auto-load all plugins.<br>
+<p>I use <a href="https://github.com/VundleVim/Vundle.vim">Vundle</a> for plugin managment.<br>
 Installation is simple, just do following command in terminal:</p>
 
 <div class="highlight highlight-source-shell"><pre><span class="pl-c"># clone into your home dir/</span>
@@ -38,19 +38,9 @@ Installation is simple, just do following command in terminal:</p>
 <span class="pl-k">~</span>$ mv ssarcandy-vim .vim <span class="pl-k">&amp;&amp;</span> cp .vim/.vimrc <span class="pl-k">~</span>
 
 <span class="pl-c"># install plugins</span>
-<span class="pl-k">~</span>$ <span class="pl-c1">cd</span> .vim/
-<span class="pl-k">~</span>$ git submodule foreach --recursive git pull origin master   
-
-<span class="pl-c"># or you can use the installation script</span>
-<span class="pl-k">~</span>$ ./install.sh</pre></div>
-
-<h2>
-<a id="update-plugins" class="anchor" href="#update-plugins" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Update plugins</h2>
-
-<div class="highlight highlight-source-shell"><pre><span class="pl-k">~</span>$ git submodule update --recursive
-
-<span class="pl-c"># or you can use the updating script</span>
-<span class="pl-k">~</span>$ ./update.sh</pre></div>
+<span class="pl-k">~</span>$ vim .vimrc
+<span class="pl-c"># type following command in vim</span>
+<span class="pl-c"># :PluginInstall</span></pre></div>
 
 <h2>
 <a id="screenshots" class="anchor" href="#screenshots" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Screenshots</h2>
@@ -94,6 +84,7 @@ Installation is simple, just do following command in terminal:</p>
 <li><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></li>
 <li><a href="https://github.com/vim-airline/vim-airline-themes">vim-airline-themes</a></li>
 <li><a href="https://github.com/Chiel92/vim-autoformat">vim-autoformat</a></li>
+<li><a href="https://github.com/skammer/vim-css-color">vim-css-color</a></li>
 <li><a href="https://github.com/airblade/vim-gitgutter">vim-gitgutter</a></li>
 <li><a href="https://github.com/fatih/vim-go">vim-go</a></li>
 <li><a href="https://github.com/mxw/vim-jsx">vim-jsx</a></li>
@@ -140,6 +131,12 @@ Installation is simple, just do following command in terminal:</p>
 <td>NORMAL</td>
 <td>close current tab</td>
 <td>will warning without saving</td>
+</tr>
+<tr>
+<td><code>\x</code></td>
+<td>NORMAL</td>
+<td>close current window</td>
+<td></td>
 </tr>
 <tr>
 <td><code>ctrl + l</code></td>
