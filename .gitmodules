@@ -82,3 +82,6 @@
 [submodule "bundle/nerdtree-execute"]
 	path = bundle/nerdtree-execute
 	url = https://github.com/ivalkeen/nerdtree-execute.git
+[submodule "bundle/Vundle.vim"]
+	path = bundle/Vundle.vim
+	url = https://github.com/VundleVim/Vundle.vim
