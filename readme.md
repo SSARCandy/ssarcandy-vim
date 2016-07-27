@@ -7,16 +7,19 @@ I use [Vundle](https://github.com/VundleVim/Vundle.vim) for plugin managment.
 Installation is simple, just do following command in terminal:
 
 ```bash
-# clone into your home dir/
-~$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
+# Clone into your home dir/
+$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
 
-# make sure that .vim/ isn't exist in your home dir
-# rename as .vim/ and copy .vimrc to home dir/
-~$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
+# Make sure that .vim/ isn't exist in your home dir
+# Rename as .vim/ and copy .vimrc to home dir/
+$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
 
-# install plugins
-~$ vim .vimrc
-# type following command in vim
+# Clone submodules
+$ git submodule update --init --recursive
+
+# Install plugins
+$ vim .vimrc
+# Type following command in vim
 # :PluginInstall
 ```
 
