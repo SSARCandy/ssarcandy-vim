@@ -2,56 +2,41 @@
 "   vim config file         "
 "   Created by SSARCandy    "
 """""""""""""""""""""""""""""
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
+" Make sure you use single quotes
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'mileszs/ack.vim'
+Plug 'moll/vim-bbye'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Raimondi/delimitMate'
+Plug 'othree/es.next.syntax.vim', {'for': ['js', 'javascript']}
+Plug 'haya14busa/incsearch.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'Shougo/neocomplete.vim'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " On-demand loading
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
+Plug 'vim-scripts/taglist.vim', {'for': ['cpp', 'hpp', 'h', 'c']}
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Chiel92/vim-autoformat'
+Plug 'skammer/vim-css-color', {'for': ['css', 'less', 'sass']}
+Plug 'airblade/vim-gitgutter'
+Plug 'fatih/vim-go', {'for': ['go']}
+Plug 'pangloss/vim-javascript', {'for': ['js', 'javascript']}
+Plug 'mxw/vim-jsx', {'for': ['jsx']}
+Plug 'terryma/vim-multiple-cursors'
+Plug 'myhere/vim-nodejs-complete', {'for': ['js', 'javascript']}
+Plug 'tpope/vim-sleuth'
+Plug 'honza/vim-snippets'
+Plug 'othree/yajs.vim'
+Plug 'chrisbra/csv.vim', {'for': ['csv']}
+Plug 'ivalkeen/nerdtree-execute'
 
-Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
-Plugin 'mileszs/ack.vim'
-Plugin 'moll/vim-bbye'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'othree/es.next.syntax.vim'
-Plugin 'haya14busa/incsearch.vim'
-Plugin 'Yggdroot/indentLine'
-Plugin 'Shougo/neocomplete.vim'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
-Plugin 'scrooloose/syntastic'
-Plugin 'godlygeek/tabular'
-Plugin 'vim-scripts/taglist.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'Chiel92/vim-autoformat'
-Plugin 'skammer/vim-css-color'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'fatih/vim-go'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'myhere/vim-nodejs-complete'
-Plugin 'tpope/vim-sleuth'
-Plugin 'honza/vim-snippets'
-Plugin 'othree/yajs.vim'
-Plugin 'chrisbra/csv.vim'
-Plugin 'ivalkeen/nerdtree-execute'
-"Plugin 'ryanoasis/vim-webdevicons'
+" Add plugins to &runtimepath
+call plug#end()
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-" Brief help
-"  :PluginList       - lists configured plugins
-"  :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-"  :PluginSearch foo - searches for foo; append `!` to refresh local cache
-"  :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" Put your non-Plugin stuff after this line
 
 set shell=bash\ -i
 set autoindent
