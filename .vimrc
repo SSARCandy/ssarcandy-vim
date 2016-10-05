@@ -33,6 +33,8 @@ Plug 'honza/vim-snippets'
 Plug 'othree/yajs.vim'
 Plug 'chrisbra/csv.vim', {'for': ['csv']}
 Plug 'ivalkeen/nerdtree-execute'
+Plug 'davidhalter/jedi-vim', {'for': ['py']}
+Plug 'andviro/flake8-vim', {'for': ['py']}
 
 " Add plugins to &runtimepath
 call plug#end()
@@ -82,6 +84,8 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 
+" disable doc window in python
+autocmd FileType python setlocal completeopt-=preview
 
 " Put plugins and dictionaries in this dir (also on Windows)
 let vimDir = '$HOME/.vim'
@@ -314,3 +318,9 @@ let g:go_fmt_autosave = 0
 "autocmd FileType nerdtree setlocal nolist
 "let g:WebDevIconsNerdTreeAfterGlyphPadding = ''
 "set ambiwidth=double
+
+" ------------- flake8 ------------------------
+let g:PyFlakeCheckers = 'pep8,mccabe,frosted'
+let g:PyFlakeOnWrite = 1
+let g:PyFlakeSigns = 1
+let g:PyFlakeMaxLineLength = 200

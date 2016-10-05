@@ -1,3 +1,4 @@
 *.swp
 undodir/**
 bundle/**
+plugged/**
