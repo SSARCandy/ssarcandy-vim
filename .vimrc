@@ -35,6 +35,7 @@ Plug 'chrisbra/csv.vim', {'for': ['csv']}
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'davidhalter/jedi-vim', {'for': ['py']}
 Plug 'andviro/flake8-vim', {'for': ['py']}
+Plug 'sheerun/vim-polyglot'
 
 " Add plugins to &runtimepath
 call plug#end()
