@@ -7,18 +7,15 @@ I use [vim-plug](https://github.com/junegunn/vim-plug) for plugin managment.
 Installation is simple, just do following command in terminal:
 
 ```bash
-# Clone into your home dir/
-$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
-
 # Make sure that .vim/ isn't exist in your home dir
-# Rename as .vim/ and copy .vimrc to home dir/
-$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
+# Clone into your home dir/
+$ git clone https://github.com/SSARCandy/ssarcandy-vim.git .vim
 
-# Install plugins
-$ vim ~/.vimrc
-# Type following command in vim
-# :PlugInstall
+# Make soft link .vim/.vimrc to ~/.vimrc
+$ ln -s .vim/.vimrc ~/.vimrc
 ```
+
+Enter vim, type following command to install plugins: `:PlugInstall`
 
 ## Screenshots
 ![](https://raw.githubusercontent.com/SSARCandy/ssarcandy-vim/master/screenshot/screenshot-1.jpg)
