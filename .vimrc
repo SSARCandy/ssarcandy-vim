@@ -14,7 +14,7 @@ Plug 'haya14busa/incsearch.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' } " On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/taglist.vim', {'for': ['cpp', 'hpp', 'h', 'c']}
@@ -36,6 +36,7 @@ Plug 'ivalkeen/nerdtree-execute'
 Plug 'davidhalter/jedi-vim', {'for': ['py']}
 Plug 'andviro/flake8-vim', {'for': ['py']}
 Plug 'sheerun/vim-polyglot'
+Plug 'vim-tw/vimcdoc-tw'
 
 call plug#end()
 
