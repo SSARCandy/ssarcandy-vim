@@ -3,16 +3,16 @@
 My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX
 
 ## Install
+
 I use [vim-plug](https://github.com/junegunn/vim-plug) for plugin managment.  
 Installation is simple, just do following command in terminal:
 
 ```bash
 # Make sure that .vim/ isn't exist in your home dir
-# Clone into your home dir/
-$ git clone https://github.com/SSARCandy/ssarcandy-vim.git .vim
+$ git clone https://github.com/SSARCandy/ssarcandy-vim.git ~/.vim
 
 # Make soft link .vim/.vimrc to ~/.vimrc
-$ ln -s .vim/.vimrc ~/.vimrc
+$ ln -s .vim/vimrc ~/.vimrc
 ```
 
 Enter vim, type following command to install plugins: `:PlugInstall`
