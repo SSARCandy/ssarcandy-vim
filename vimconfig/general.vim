@@ -25,7 +25,7 @@ set list lcs=tab:\|\    " Indent hint with hard-tab"
 set showcmd             " Show command
 set nowrap              " No word-warp
 set nu
-set concealcursor=nc
+set concealcursor=
 set guifont=Monaco:h14
 set showmatch
 syntax on
