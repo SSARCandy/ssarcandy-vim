@@ -3,22 +3,19 @@
 My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX
 
 ## Install
+
 I use [vim-plug](https://github.com/junegunn/vim-plug) for plugin managment.  
 Installation is simple, just do following command in terminal:
 
 ```bash
-# Clone into your home dir/
-$ git clone https://github.com/SSARCandy/ssarcandy-vim.git
-
 # Make sure that .vim/ isn't exist in your home dir
-# Rename as .vim/ and copy .vimrc to home dir/
-$ mv ssarcandy-vim .vim && cp .vim/.vimrc ~
+$ git clone https://github.com/SSARCandy/ssarcandy-vim.git ~/.vim
 
-# Install plugins
-$ vim ~/.vimrc
-# Type following command in vim
-# :PlugInstall
+# Make soft link .vim/vimrc to ~/.vimrc
+$ ln -s .vim/vimrc ~/.vimrc
 ```
+
+Enter vim, type following command to install plugins: `:PlugInstall`
 
 ## Screenshots
 ![](https://raw.githubusercontent.com/SSARCandy/ssarcandy-vim/master/screenshot/screenshot-1.jpg)
@@ -36,31 +33,38 @@ $ vim ~/.vimrc
 
 ## Plugin list
 
- - [ack.vim](https://github.com/mileszs/ack.vim)
- - [bbye](https://github.com/moll/vim-bbye)
- - [ctrlp.vim](https://github.com/kien/ctrlp.vim)
- - [delimitMate](https://github.com/Raimondi/delimitMate)
- - [es.next.syntax.vim](https://github.com/othree/es.next.syntax.vim)
- - [incsearch.vim](https://github.com/haya14busa/incsearch.vim)
- - [indentLine](https://github.com/Yggdroot/indentLine)
- - [neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
- - [nerdcommenter](https://github.com/scrooloose/nerdcommenter)
- - [nerdtree](https://github.com/scrooloose/nerdtree)
- - [syntastic](https://github.com/scrooloose/syntastic)
- - [tabular](https://github.com/godlygeek/tabular)
- - [taglist.vim](https://github.com/vim-scripts/taglist.vim)
- - [vim-airline](https://github.com/vim-airline/vim-airline)
- - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
- - [vim-autoformat](https://github.com/Chiel92/vim-autoformat)
- - [vim-css-color](https://github.com/skammer/vim-css-color)
- - [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
- - [vim-go](https://github.com/fatih/vim-go)
- - [vim-jsx](https://github.com/mxw/vim-jsx)
- - [vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
- - [vim-nodejs-complete](https://github.com/myhere/vim-nodejs-complete)
- - [vim-sleuth](https://github.com/tpope/vim-sleuth)
- - [vim-snippets](https://github.com/honza/vim-snippets)
- - [yajs.vim](https://github.com/othree/yajs.vim)
+- [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
+- [moll/vim-bbye](https://github.com/moll/vim-bbye)
+- [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim)
+- [Raimondi/delimitMate](https://github.com/Raimondi/delimitMate)
+- [othree/es.next.syntax.vim](https://github.com/othree/es.next.syntax.vim)
+- [haya14busa/incsearch.vim](https://github.com/haya14busa/incsearch.vim)
+- [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
+- [Shougo/neocomplete.vim](https://github.com/Shougo/neocomplete.vim)
+- [scrooloose/nerdcommenter](https://github.com/scrooloose/nerdcommenter)
+- [scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+- [scrooloose/syntastic](https://github.com/scrooloose/syntastic)
+- [godlygeek/tabular](https://github.com/godlygeek/tabular)
+- [vim-scripts/taglist.vim](https://github.com/vim-scripts/taglist.vim)
+- [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
+- [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes)
+- [Chiel92/vim-autoformat](https://github.com/Chiel92/vim-autoformat)
+- [skammer/vim-css-color](https://github.com/skammer/vim-css-color)
+- [airblade/vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [fatih/vim-go](https://github.com/fatih/vim-go)
+- [pangloss/vim-javascript](https://github.com/pangloss/vim-javascript)
+- [mxw/vim-jsx](https://github.com/mxw/vim-jsx)
+- [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+- [myhere/vim-nodejs-complete](https://github.com/myhere/vim-nodejs-complete)
+- [tpope/vim-sleuth](https://github.com/tpope/vim-sleuth)
+- [honza/vim-snippets](https://github.com/honza/vim-snippets)
+- [othree/yajs.vim](https://github.com/othree/yajs.vim)
+- [chrisbra/csv.vim](https://github.com/chrisbra/csv.vim)
+- [ivalkeen/nerdtree-execute](https://github.com/ivalkeen/nerdtree-execute)
+- [davidhalter/jedi-vim](https://github.com/davidhalter/jedi-vim)
+- [andviro/flake8-vim](https://github.com/andviro/flake8-vim)
+- [sheerun/vim-polyglot](https://github.com/sheerun/vim-polyglot)
+- [vim-tw/vimcdoc-tw](https://github.com/vim-tw/vimcdoc-tw)
 
 ## Shortcuts
 
@@ -82,4 +86,3 @@ $ vim ~/.vimrc
 |`q`           |ERROR LIST      |close jshint error list   | for js file only                 |
 |`F9`          |NORMAL/INSERT   |show jshint next error    | for js file only                 |
 |`F7`          |NORMAL/INSERT   |show jshint previous error| for js file only                 |
-
