@@ -35,7 +35,7 @@ Plug 'chrisbra/csv.vim', {'for': ['csv']}
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'davidhalter/jedi-vim', {'for': ['py']}
 Plug 'andviro/flake8-vim', {'for': ['py']}
-Plug 'sheerun/vim-polyglot'
+"Plug 'sheerun/vim-polyglot'
 Plug 'vim-tw/vimcdoc-tw'
 
 call plug#end()
