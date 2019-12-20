@@ -8,7 +8,7 @@ I use [vim-plug](https://github.com/junegunn/vim-plug) for plugin managment.
 Installation is simple, just do following command in terminal:
 
 ```bash
-# Make sure that .vim/ isn't exist in your home dir
+# Make sure that .vim/ is exist in your home dir
 $ git clone https://github.com/SSARCandy/ssarcandy-vim.git ~/.vim
 
 # Make soft link .vim/vimrc to ~/.vimrc
