@@ -13,9 +13,10 @@ $ git clone https://github.com/SSARCandy/ssarcandy-vim.git ~/.vim
 
 # Make soft link .vim/vimrc to ~/.vimrc
 $ ln -s .vim/vimrc ~/.vimrc
-```
 
-Enter vim, type following command to install plugins: `:PlugInstall`
+# Install plugins
+$ vim -S ~/.vim/plug-snapshot
+```
 
 ## Screenshots
 ![](https://raw.githubusercontent.com/SSARCandy/ssarcandy-vim/master/screenshot/screenshot-1.jpg)
