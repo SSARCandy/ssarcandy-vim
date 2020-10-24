@@ -31,7 +31,6 @@ Plug 'myhere/vim-nodejs-complete', {'for': ['js', 'javascript']}
 Plug 'tpope/vim-sleuth'
 Plug 'honza/vim-snippets'
 Plug 'othree/yajs.vim'
-Plug 'chrisbra/csv.vim', {'for': ['csv']}
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'davidhalter/jedi-vim', {'for': ['py']}
 Plug 'andviro/flake8-vim', {'for': ['py']}
