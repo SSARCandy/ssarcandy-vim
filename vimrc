@@ -12,7 +12,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'othree/es.next.syntax.vim', {'for': ['js', 'javascript']}
 Plug 'haya14busa/incsearch.vim'
 Plug 'Yggdroot/indentLine'
-Plug 'Shougo/neocomplete.vim'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'scrooloose/syntastic'
@@ -37,6 +36,11 @@ Plug 'andviro/flake8-vim', {'for': ['py']}
 "Plug 'sheerun/vim-polyglot'
 Plug 'vim-tw/vimcdoc-tw'
 
+" deoplete related plugins
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'Shougo/deoplete.nvim'
+
 call plug#end()
 
 
@@ -53,7 +57,7 @@ source ~/.vim/vimconfig/plugins/flake8.vim
 source ~/.vim/vimconfig/plugins/gitgutter.vim
 source ~/.vim/vimconfig/plugins/incsearch.vim
 source ~/.vim/vimconfig/plugins/indentLine.vim
-source ~/.vim/vimconfig/plugins/neocomplete.vim
+source ~/.vim/vimconfig/plugins/deoplete.vim
 source ~/.vim/vimconfig/plugins/nerdcommenter.vim
 source ~/.vim/vimconfig/plugins/nerdtree.vim
 source ~/.vim/vimconfig/plugins/syntastic.vim
