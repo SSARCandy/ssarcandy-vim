@@ -1,6 +1,6 @@
 # ssarcandy-vim
 
-My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX
+My vim settings and plugins, compatible with [MacVim](http://macvim-dev.github.io/macvim/) in OSX. Requires vim 8.1+
 
 ## Install
 
