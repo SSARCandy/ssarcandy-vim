@@ -24,7 +24,6 @@ Plug 'skammer/vim-css-color', {'for': ['css', 'less', 'sass']}
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go', {'for': ['go']}
 Plug 'pangloss/vim-javascript', {'for': ['js', 'javascript']}
-Plug 'mxw/vim-jsx', {'for': ['jsx']}
 Plug 'terryma/vim-multiple-cursors'
 Plug 'myhere/vim-nodejs-complete', {'for': ['js', 'javascript']}
 Plug 'tpope/vim-sleuth'
@@ -33,13 +32,12 @@ Plug 'othree/yajs.vim'
 Plug 'ivalkeen/nerdtree-execute'
 Plug 'davidhalter/jedi-vim', {'for': ['py']}
 Plug 'andviro/flake8-vim', {'for': ['py']}
-"Plug 'sheerun/vim-polyglot'
 Plug 'vim-tw/vimcdoc-tw'
 
 " deoplete related plugins
+Plug 'Shougo/deoplete.nvim'
 Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
-Plug 'Shougo/deoplete.nvim'
 
 call plug#end()
 
