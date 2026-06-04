@@ -90,8 +90,8 @@ let &runtimepath.=','.vimDir
 " Keep undo history across sessions by storing it in a file
 if has('persistent_undo')
   let myUndoDir = expand(vimDir . '/undodir')
-  call system('mkdir ' . vimDir)     " Create dirs
-  call system('mkdir ' . myUndoDir)  " Create undo dir
+  if !isdirectory(expand(vimDir)) | call mkdir(expand(vimDir), 'p') | endif
+  if !isdirectory(myUndoDir)      | call mkdir(myUndoDir, 'p')      | endif
   let &undodir = myUndoDir
   set undofile
 endif
