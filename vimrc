@@ -13,7 +13,7 @@ Plug 'othree/es.next.syntax.vim', {'for': ['js', 'javascript']}
 Plug 'haya14busa/incsearch.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'godlygeek/tabular'
 Plug 'vim-scripts/taglist.vim', {'for': ['cpp', 'hpp', 'h', 'c']}
